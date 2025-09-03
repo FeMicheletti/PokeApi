@@ -1,0 +1,65 @@
+@use "bootstrap/scss/bootstrap" as *;
+
+$primary: #726DA8;
+$secondary: #E3C0D3;
+
+//* Styles
+.gradient-directional {
+  @include gradient-directional($primary, $secondary, 135deg);
+}
+
+.text-shadow-2-2-4-black {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+//* Padding & Margin
+.pt-6 {
+  margin-top: ($spacer * 4) !important;
+}
+
+.ms-6 {
+  margin-left: ($spacer * 4) !important;
+}
+
+.ms-7 {
+  margin-left: ($spacer * 7) !important;
+}
+
+.z-4 {
+  z-index: 4;
+}
+
+.z-5 {
+  z-index: 5;
+}
+
+.z-6 {
+  z-index: 6;
+}
+
+//* Animações
+.transition-transform {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transform-rotate {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+.transform-reverse-rotate {
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+.transform-left-right-6 {
+  transform: translate($spacer * 3);
+}
+
+.transform-left-right-7 {
+  transform: translate($spacer * 6);
+}
